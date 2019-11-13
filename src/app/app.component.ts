@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-    admin.auth().getUserByEmail('albertidavide91@gmail.com').then((res) => console.log(res)).catch((err) => console.log(err))
+  ngOnInit() { 
+    console.log(admin);
   }
 }
