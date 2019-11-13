@@ -12,6 +12,6 @@ export class AppComponent implements OnInit {
   constructor(private databaseService: DatabaseService) {}
 
   ngOnInit() {
-    this.databaseService.get().then((res) => console.log(res)).catch((err) => console.log(err))
+    this.databaseService.get()
   }
 }
