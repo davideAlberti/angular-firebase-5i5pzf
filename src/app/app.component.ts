@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as admin from 'firebase-admin';
 
 @Component({
   selector: 'my-app',
@@ -12,6 +11,5 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit() { 
-    console.log(admin);
   }
 }
