@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DatabaseService } from './database.service';
+import * as admin from 'firebase-admin';
 
 @Component({
   selector: 'my-app',
@@ -9,9 +9,9 @@ import { DatabaseService } from './database.service';
 export class AppComponent implements OnInit {
   name = 'Angular';
 
-  constructor(private databaseService: DatabaseService) {}
+  constructor() {}
 
   ngOnInit() {
-    this.databaseService.get()
+    admin.auth().getUserByEmail('albertidavide91@gmail.com').then((res) => console.log(res)).catch((err) => console.log(err))
   }
 }

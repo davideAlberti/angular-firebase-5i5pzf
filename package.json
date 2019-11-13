@@ -13,9 +13,11 @@
     "@angular/platform-browser-dynamic": "8.2.13",
     "@angular/router": "8.2.13",
     "@firebase/app": "^0.4.22",
+    "@types/node": "^12.12.7",
     "core-js": "2.6.10",
     "firebase": "7.2.3",
     "firebase-admin": "8.7.0",
+    "hammer": "^0.0.5",
     "rxjs": "6.5.3",
     "zone.js": "0.9.1"
   },
